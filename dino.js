@@ -5,7 +5,12 @@ let highScoreText = document.getElementById("high-score")
 let progress = 0
 let highScore = localStorage.getItem("highScore") || 0
 highScoreText.textContent += ' ' + highScore + 'm'
+let reloadBtn = document.getElementById("reload")
 let y = 130
+
+reloadBtn.addEventListener('click', () => {
+    location.reload()
+})
 
 function main(coord) {
     ctx.beginPath()
