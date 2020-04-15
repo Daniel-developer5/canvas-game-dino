@@ -64,15 +64,11 @@ let progressInterval = setInterval(() => {
 
 document.addEventListener('keydown', (event) => {
     if (event.keyCode == 38 || event.keyCode == 87) {
-        if (event.keyCode == 38) {
-            jump()
-        }
+        jump()
     }
 })
 
-document.addEventListener('click', () => {
-    jump()
-})
+document.addEventListener('click', jump)
 
 function jump() {
     y = 90
